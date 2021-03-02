@@ -10,8 +10,11 @@
 </head>
 <body>
     <div id="app">
-
-
+        <div v-for="element in arrayMusic"class="class"></div>
+        <img :src="element.images" alt="">
+        <h3>{{element.title}}</h3>
+        <span class="author">{{element.artist}}</span>
+        <span class="year">{{element.date}}</span>
         
     </div>
 

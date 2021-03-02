@@ -8,7 +8,7 @@ new Vue({
     },
     mounted() {
 		let self=this
-		axios.get(' https://flynn.boolean.careers/exercises/api/array/music')
+		axios.get(' http://localhost:8888/php-ajax-dischi/app/server.php')
               .then(function(element) {
                const arryDisck=(element.data.response);
 			   self.arrayMusic=arryDisck;  
