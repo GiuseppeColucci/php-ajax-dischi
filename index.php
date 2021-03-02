@@ -14,7 +14,11 @@ require_once __DIR__ . '/database/database.php';
 
 <?php    
 foreach($albums as $Value){
-echo $Value["title"];
+echo $Value["images"];
+echo $Value["title"]; 
+echo $Value["artist"];
+echo $Value["date"];
+
 }
 ?> 
 
