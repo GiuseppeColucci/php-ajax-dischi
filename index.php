@@ -8,19 +8,15 @@
 </head>
 <body>
 <?php    
-
+//parte collegamento a database!
 require_once __DIR__ . '/database/database.php';
 ?>
 
 <?php    
-
 foreach($albums as $Value){
-?>
-
-echo $Value["title"]
-<?php
+echo $Value["title"];
 }
-?>
+?> 
 
 
     
