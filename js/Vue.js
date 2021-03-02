@@ -8,10 +8,11 @@ new Vue({
     },
     mounted() {
 		let self=this
-		axios.get(' http://localhost:8888/php-ajax-dischi/app/server.php')
-              .then(function(element) {
-               const arryDisck=(element.data.response);
+		axios.get('http://localhost:8888/php-ajax-dischi/app/server.php')
+              .then(function(response) {
+               const arryDisck=response.data;
 			   self.arrayMusic=arryDisck;  
+            console.log(response)
               });
        
       }
