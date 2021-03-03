@@ -24,7 +24,7 @@ require_once __DIR__ . '/database/database.php';
             <img src="<?php echo $Value["images"]?>" alt="">
             </div>
             <div class="titolo">
-            <h1><?php echo $Value["title"]?></h1>
+            <h3><?php echo $Value["title"]?></h3>
             </div>
             <div class="artista">
             <p><?php  echo $Value["artist"]?> </p>
