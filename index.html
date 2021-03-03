@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <link rel="stylesheet" href="./dist/app.css">
     <title>Document</title>
 </head>
 <body>
     <div id="app">
-        <div v-for="element in arrayMusic"class="class"class="container">
+        <div v-for="element in arrayMusic"class="cds-container container">
          
                 
-                <div class="album">
+                <div class="cd">
                     <div class="img">
                         <img :src="element.images" alt="">
 
@@ -22,11 +23,11 @@
                         <h3>{{element.title}}</h3>
 
                     </div>
-                    <div class="artista">
+                    <div class="author">
                         <p class="author">{{element.artist}}</p>
 
                     </div>
-                    <div class="date">
+                    <div class="year">
                         <p class="year">{{element.date}}</p>
 
                     </div>

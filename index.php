@@ -15,21 +15,21 @@ require_once __DIR__ . '/database/database.php';
 
 
 
-<div class="container">
+<div class="cds-container container">
     <?php 
     foreach($albums as $Value){
         ?>
-        <div class="album">
+        <div class="cd">
             <div class="img">
             <img src="<?php echo $Value["images"]?>" alt="">
             </div>
             <div class="titolo">
             <h3><?php echo $Value["title"]?></h3>
             </div>
-            <div class="artista">
+            <div class="author">
             <p><?php  echo $Value["artist"]?> </p>
             </div>
-            <div class="date">
+            <div class="year">
             <p> <?php echo $Value["date"] ?></p>
             </div>
     
