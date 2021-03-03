@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/app.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,15 +13,37 @@
 require_once __DIR__ . '/database/database.php';
 ?>
 
-<?php    
-foreach($albums as $Value){
-echo $Value["images"];
-echo $Value["title"]; 
-echo $Value["artist"];
-echo $Value["date"];
 
-}
-?> 
+
+<div class="container">
+    <?php 
+    foreach($albums as $Value){
+        ?>
+        <div class="album">
+            <div class="img">
+            <img src="<?php echo $Value["images"]?>" alt="">
+            </div>
+            <div class="titolo">
+            <h1><?php echo $Value["title"]?></h1>
+            </div>
+            <div class="artista">
+            <p><?php  echo $Value["artist"]?> </p>
+            </div>
+            <div class="date">
+            <p> <?php echo $Value["date"] ?></p>
+            </div>
+    
+        
+        </div>
+    <?php  
+        }
+    ?>
+</div>
+
+
+
+
+
 
 
     
