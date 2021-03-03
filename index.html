@@ -11,10 +11,10 @@
 </head>
 <body>
     <div id="app">
-        <div v-for="element in arrayMusic"class="cds-container container">
+        <div class="cds-container container">
          
                 
-                <div class="cd">
+                <div  v-for="element in arrayMusic"class="cd">
                     <div class="img">
                         <img :src="element.images" alt="">
 
@@ -24,11 +24,11 @@
 
                     </div>
                     <div class="author">
-                        <p class="author">{{element.artist}}</p>
+                        <p >{{element.artist}}</p>
 
                     </div>
                     <div class="year">
-                        <p class="year">{{element.date}}</p>
+                        <p >{{element.date}}</p>
 
                     </div>
             
